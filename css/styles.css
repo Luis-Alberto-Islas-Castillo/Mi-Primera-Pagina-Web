@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
 body{
     margin: 0;
     padding: 0;
@@ -10,6 +11,9 @@ h1{
 }
 h2{
    font-size: 1.5em;
+}
+h3{
+    font-size: 1.25em;
 }
 a{
     font-size: 1em;
@@ -27,7 +31,7 @@ li{
     font-size: 1.4em;
 }
 .resaltado{
-    background-color: darkgreen;
+    background-color: aquamarine;
 }
 .small{
     font-size: 0.9em;
@@ -94,6 +98,19 @@ header nav li a {
 header nav li.icon1 a{
     background-image: url("../assets/icons/chichen-itza.png");
 }
+header nav li.icon2 a{
+    background-image: url("../assets/icons/sol.png");
+}
+header nav li.icon3 a{
+    background-image: url("../assets/icons/mascara-maya-de-mexico.png");
+}
+header nav li.icon4 a{
+    background-image: url("../assets/icons/mascara.png");
+}
+header nav li a:hover {
+    color: aquamarine;
+    transition: color 1s;
+}
 main {
     padding-bottom: 30px;
     width: 80%;
@@ -141,6 +158,17 @@ section.content img{
 .img_container{
     text-align: center;
 }
+.checklist li{
+    border: 1px solid #666;
+    padding: 0.25em 0.5em;
+    margin: 0.4em 0.8em;
+    font-size: 0.7em;
+    display: inline-block;
+}
+#services.checklist ul > li{
+    color: #ff0000;
+    border-color: #ff0000;
+}
 footer {
     background: #333333;
     padding: 20px 0;
@@ -160,8 +188,6 @@ footer li a img {
     overflow: hidden;
     margin: 0 20px;
 }
-
-
 @media (max-width: 600px) {
     body{
         font-size: 1.3em;
