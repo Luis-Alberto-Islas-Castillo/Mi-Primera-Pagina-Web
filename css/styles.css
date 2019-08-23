@@ -90,21 +90,23 @@ header nav li a {
     font-size: 1.1em;
     text-decoration: none;
     color: #FFFFFF;
+}
+.icon{
     background-image: url("../assets/icons/chichen-itza.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 1.5em;
 }
-header nav li.icon1 a{
+.icon.icon1{
     background-image: url("../assets/icons/chichen-itza.png");
 }
-header nav li.icon2 a{
+.icon.icon2{
     background-image: url("../assets/icons/sol.png");
 }
-header nav li.icon3 a{
+.icon.icon3{
     background-image: url("../assets/icons/mascara-maya-de-mexico.png");
 }
-header nav li.icon4 a{
+.icon.icon4{
     background-image: url("../assets/icons/mascara.png");
 }
 header nav li a:hover {
