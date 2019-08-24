@@ -109,6 +109,37 @@ header nav li a {
 .icon.icon4{
     background-image: url("../assets/icons/mascara.png");
 }
+.zoon-info{
+    display: inline-block;
+    position: relative;
+  }
+  .zoon-info *{
+    width: 100%;
+    margin: 0;
+  }
+  .zoon-info:after{
+    content: "+";
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    cursor: pointer;
+  }
+  .zoon-info:hover:after{
+    display: block;
+  }
 header nav li a:hover {
     color: aquamarine;
     transition: color 1s;
@@ -137,11 +168,15 @@ main:after{
 .gallery{
     font-size: 0;
 }
-.gallery img{
-    width: 16%;
-    margin: 2%;
+.gallery .zoon-info{
+    width: calc(20% - (16%/5)); 
+    margin: 2% 4%;
+    margin-left: 0;
     box-sizing: border-box;
-}
+  }
+  .gallery .zoon-info:last-child{
+    margin-right: 0;
+  }
 img {
     margin: 20px;
 }
